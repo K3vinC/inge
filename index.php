@@ -1,6 +1,7 @@
 <?php
     
-    require('conn/db_connect.php');session_start();
+    require('conn/db_connect.php');
+    session_start();
     require('templates/header.php');
     $message = '';
  /*   if (!empty($_POST['nombre']) && !empty($_POST['pass'])){
