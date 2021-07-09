@@ -1,0 +1,60 @@
+html,
+body {
+  height: 100%;
+}
+
+  h2{
+    position: relative;
+    top: 120px;
+    font-size:2; 
+    color:black;
+    text-align: center;
+    font-family: "Trebuchet MS";
+    font-size: 30px;
+    visibility:visible; 
+    z-index:2;
+}
+
+body{
+  background: url("imagenes/fondo.jpg");
+  background-image: fixed;
+  background-image: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.contenedor3{
+    text-align: center;
+    position: relative;
+    bottom: -100px;   
+    z-index: 999;  
+    width: 40%;
+    height: 140px;
+    margin-left: auto;
+    margin-right: auto;  
+    padding: 5px;
+  }
+
+  .boton2{
+    background-color: #FDFEFE;
+    color: black;
+    border: 2px solid #FDFEFE;
+    font-size: 20px;
+    font-style: italic;
+    font-family: helvetica;
+    width: 60%;
+    height: 40px;
+    position:relative;
+    bottom: -20px;
+    border-radius: 12px;
+    font-weight: bold;
+  }
+  
+  .boton2:hover{
+    background-color: #E74C3C;
+    color: white;
+    border: 2px solid #E74C3C;
+    cursor: pointer;    
+  }

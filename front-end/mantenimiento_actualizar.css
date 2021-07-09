@@ -1,0 +1,158 @@
+html,
+body {
+  height: 100%;
+}
+
+h1{ 
+  position: relative;
+  top: 60px;  
+  margin-top: 10px; 
+  color:#FDFEFE;
+  font-family: "Trebuchet MS";
+  font-size: 30px;
+  }
+
+  h2{
+    position: relative;
+    top: 120px;
+    font-size:2; 
+    color:black;
+    text-align: center;
+    font-family: "Trebuchet MS";
+    font-size: 30px;
+    visibility:visible; 
+    z-index:2;
+}
+
+body{
+  background: url("imagenes/fondo.jpg");
+  background-image: fixed;
+  background-image: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.contenedor{
+    position: relative;
+    top: 80px; 
+    padding:10px;
+    box-sizing:border-box;
+    width: 50.5%;
+    height: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;  
+    }
+
+    /*
+.contenedor2{  width: 95.5%;
+  padding:10px;
+  box-sizing:border-box;
+  margin:12px;
+  float:left;
+  background-color: burlywood;
+  }*/
+  
+.cod{
+  font-size: 20px;  
+  text-align: center;
+  margin:10px;
+  width: 20%;
+  height: 35px;
+  border-radius: 12px; 
+}
+
+.pr{
+  text-align: left;
+  font-size: 15px;  
+  margin-top:10px;
+  width: 90%;
+  height: 90px;
+  border: 2px solid black;
+   
+}
+
+
+input[type=text]:focus {
+  background-color: #85C1E9;
+  border-radius: 12px; 
+  
+}
+
+.contenedor3{
+    text-align: center;
+    position: relative;
+    bottom: -100px;   
+    z-index: 999;  
+    width: 40%;
+    height: 140px;
+    margin-left: auto;
+    margin-right: auto;  
+    padding: 5px;
+  }
+
+  .boton{background-color: white;
+    color: black;
+    width: 60%;
+    height: 40px;
+    border: 2px solid white;
+    font-size: 20px;
+    bottom: -10px;
+    font-style: italic;
+    font-family: helvetica;  
+    position:relative;
+    border-radius: 12px;
+    font-weight: bold;
+    }
+
+    .boton:hover {
+      background-color: #3498DB;
+      color: white;
+      border: 2px solid #3498DB;
+      cursor: pointer;    
+  }  
+
+.boton2{
+    background-color: #FDFEFE;
+    color: black;
+    border: 2px solid #FDFEFE;
+    font-size: 20px;
+    font-style: italic;
+    font-family: helvetica;
+    width: 60%;
+    height: 40px;
+    position:relative;
+    bottom: -20px;
+    border-radius: 12px;
+    font-weight: bold;
+  }
+  
+  .boton2:hover{
+    background-color: #E74C3C;
+    color: white;
+    border: 2px solid #E74C3C;
+    cursor: pointer;    
+  }
+
+  .boton3{
+    background-color: #FDFEFE;
+    color: black;
+    border: 2px solid #FDFEFE;
+    font-size: 20px;
+    font-style: italic;
+    font-family: helvetica;
+    width: 60%;
+    height: 40px;
+    position:relative;
+    bottom: -20px;
+    border-radius: 12px;
+    font-weight: bold;
+  }
+
+  @media (max-width:1000px){
+    .contenedor{
+    width: 100%;
+        }
+    }
