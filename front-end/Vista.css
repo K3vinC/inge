@@ -1,0 +1,85 @@
+html,
+body {
+  height: 100%;
+}
+
+h1{ 
+  position: relative;
+  top: 60px;  
+  margin-top: 10px; 
+  color:#FDFEFE;
+  font-family: "Trebuchet MS";
+  font-size: 30px;
+  }
+
+body{
+  background: url("imagenes/fondo.jpg");
+  background-image: fixed;
+  background-image: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.contenedor{
+  text-align: center;
+  position: relative;
+  top: 80px;   
+  z-index: 999;  
+  width: 40%;
+  height: 320px;
+  margin-left: auto;
+  margin-right: auto;  
+  padding: 5px;
+}
+
+.boton{
+  background-color: #FDFEFE;
+  color: #17202A;
+  border: 2px solid #FDFEFE;
+  font-size: 20px;
+  font-style: italic;
+  font-family: helvetica;
+  width: 60%;
+  height: 40px;
+  padding: 5px;
+  margin-top: 30px;
+  position:relative;
+  border-radius: 12px;
+  overflow: hidden; 
+}
+
+.boton:before,
+.boton:after {
+  transition: all 800ms;
+  content: '';
+  background-color: rgba(0, 0, 139, 0.15); 
+  height: 100%;
+  position: absolute;
+  transform: skewX(-48deg);
+  width: 20px;   
+}
+
+.boton:before{
+  bottom: 0;
+  right: -10%;
+}
+
+.boton:after{
+  bottom: 0;
+  left: -10%;
+}
+
+.boton:hover::after,
+.boton:hover::before{
+  width: 200%;
+  cursor: pointer;
+}
+
+
+@media (max-width:1000px){
+  .contenedor{
+  width: 90%;
+      }
+  }

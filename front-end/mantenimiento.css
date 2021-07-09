@@ -1,0 +1,179 @@
+html,
+body {
+  height: 100%;
+}
+
+body{
+    background: url("imagenes/color-morado-pastel.jpg");
+    background-image: fixed;
+    background-image: center;  
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+  }
+
+  h2{
+    position: relative;
+    bottom: 40px;
+    font-size:2; 
+    color:white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    padding-bottom: 25px;
+}
+
+h3{
+    position: relative;
+    bottom: 60px;
+    font-size:2; 
+    color:white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    padding-bottom: 15px;
+}
+
+h4{
+    position: relative;
+    top: 50px;
+    font-size:4; 
+    color:white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    padding-bottom: 25px;
+}
+
+.contenedor{
+    background-color: #2F2252;
+    border: 2px solid white;
+    margin: auto;
+    position: relative;
+    top: 50px;
+    width: 50%;
+    z-index: 999;
+    padding: 5px;
+    box-sizing:border-box;
+    height: 250px; 
+    margin-top: 10px;
+}
+
+.contenedor1{
+    margin: auto;
+    position: relative;
+    top: -5px;
+    right: 18%;
+    text-align: center;
+    width: 65.5%;
+    border-radius: 6px; 
+    padding-top: 10px; 
+    height: 235px; 
+}
+
+.contenedor2{
+    margin: auto;
+    position: relative;
+    top: -250px;
+    left: 32.2%;
+    text-align: center;
+    width: 37%;
+    border-radius: 6px; 
+    padding-top: 10px; 
+    height: 235px;
+}
+.btnedit{
+    background-color: #C0C0C0;
+    color: white;
+    border: 2px solid #C0C0C0;
+    margin-top:10px;
+    font-size: 20px;
+    font-style: italic;
+    font-family: helvetica;
+    text-decoration: none;
+    width: 60%;
+    padding: 5px;
+    position:relative;
+    top: -300px;
+    left: 3%;
+    border-radius: 3px;
+}
+
+.btndelete{
+    background-color: #FE4164;
+    color: white;
+    border: 2px solid #FE4164;
+    margin-top:10px;
+    font-size: 20px;
+    font-style: italic;
+    font-family: helvetica;
+    text-decoration: none;
+    width: 60%;
+    padding: 5px;
+    position:relative;
+    top: -300px;
+    left: 6%;
+    border-radius: 3px;    
+}
+
+.contenedor3{
+    text-align: center;
+    position: relative;
+    bottom: -100px;   
+    z-index: 999;  
+    width: 40%;
+    height: 140px;
+    margin-left: auto;
+    margin-right: auto;  
+    padding: 5px;
+  }
+
+  .boton{background-color: white;
+    color: black;
+    width: 60%;
+    height: 40px;
+    border: 2px solid white;
+    font-size: 20px;
+    bottom: -10px;
+    font-style: italic;
+    font-family: helvetica;  
+    position:relative;
+    border-radius: 12px;
+    font-weight: bold;
+    }
+
+    .boton:hover {
+      background-color: #3498DB;
+      color: white;
+      border: 2px solid #3498DB;
+      cursor: pointer;    
+  }  
+
+.boton2{
+    background-color: white;
+    color: black;
+    border: 2px solid white;;
+    font-size: 20px;
+    font-style: italic;
+    font-family: helvetica;
+    width: 60%;
+    height: 40px;
+    padding: 5px;
+    margin-top: 30px;
+    position:relative;
+    border-radius: 12px; 
+    font-weight: bold;
+  }
+  
+  .boton2:hover{
+    background-color: #FE4164;
+    color: white;
+    border: 2px solid #FE4164;
+    cursor: pointer;    
+  }
+
+  @media (max-width:1000px){
+    .contenedor{
+    width: 80%;
+        }
+    }
+
