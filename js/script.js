@@ -29,5 +29,16 @@ window.onload = function () {
 
 //--------------------------------------------------------------------
 //------------------- en proceso ajuste de tamaño --------------------
+//-------------------    e[i].style.fontFamily="Arial";
+//-------------------    e[i].style.color="#ff0000";
 //--------------------------------------------------------------------
 
+function CambioTexto(){
+    var e=document.getElementsByTagName("body","div","p","i");
+    var x=document.getElementById("valor");
+    for (var i = 0; i < e.length; i++){
+    if (x.options[x.selectedIndex].text=="elige"){return false}
+    e[i].style.fontSize=x.options[x.selectedIndex].text+"px";
+
+    }
+    }

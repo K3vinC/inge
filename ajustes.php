@@ -24,29 +24,31 @@
                                         Pause</button>
                                     <button class="btn btn-small" type="button" id="stop"><i class="icon-stop"></i>
                                         Stop</button>
-    
+
                                 </div>
                                 <br>
-                                <label for="customRange1" class="form-label">Tamaño de texto</label><br>
-                                <div class="span4 p-2 btn-group" role="group" aria-label="Basic outlined example" >
-                                    
-                                    <button class="btn btn-outline-primary btn-small" type="button">
-                                    <span class="span5"style="font-size: 16px;"><i class="bi bi-aspect-ratio-fill"> Texto</i></span></button>
-                                    
-                                    <button class="btn btn-outline-primary btn-small" type="button">
-                                    <span class="span5"style="font-size: 18px;"><i class="bi bi-aspect-ratio-fill"> Texto</i></span></button>
-                                    
-                                    <button class="btn btn-outline-primary btn-small" type="button">
-                                    <span class="span5"style="font-size: 20px;"><i class="bi bi-aspect-ratio-fill"> Texto</i></span> </button>
+                                <label for="customRange1" class="form-label">Elige el tamaño del texto </label><br>
+                                <div class="span4 p-2 btn-group" role="group" aria-label="Basic outlined example">
+
+                                    <select id="valor" onchange="CambioTexto()"  class="form-select" aria-label="Default select example">
+                                        <option>Tamaño de texto</option>
+                                        <option>10</option>
+                                        <option>16</option>
+                                        <option>20</option>
+                                        <option>25</option>
+                                        <option>30</option>
+                                        <option>35</option>
+                                        <option>40</option>
+                                    </select>
 
 
                                 </div>
-                            
+
 
 
                                 <div class="span5 p-2">
                                     <label for="customRange1" class="form-label">Volumen</label><br>
-                                    <input type="range" class="form-range" id="volume" min="0" max="100">
+                                    <input type="range" class="form-range" id="volume" min="0" max="10">
                                     <span class="badge badge-inverse" id="volumeLabel"></span>
 
                                 </div>
@@ -64,7 +66,6 @@
                         </div>
                     </div>
                 </div>
-
 
 
 
