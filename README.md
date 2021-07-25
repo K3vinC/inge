@@ -19,3 +19,5 @@ https://rogerdudler.github.io/git-guide/index.es.html
 
 tambien el VSCODE trae ya funcionalidades para git que incluso lo hace mas facil de usar. 
 
+Link de ayuda que se utilizo para las ppt:
+-- https://view.genial.ly/60fdd5e0ccd7a50d55aa8a8b/video-presentation-galeria-nubes
