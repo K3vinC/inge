@@ -1,13 +1,7 @@
 <?php
 	require('templates/header.php');
     ?>
-<!--
-    include_once("inc/db_connect.php");
-    $sqlQuery = "SELECT id, name, gender, age FROM developers LIMIT 5";
-    $resultSet = mysqli_query($conn, $sqlQuery) or die("database error:". mysqli_error($conn));
 
-    ver link ====>>>> https://webdamn.com/create-editable-bootstrap-table-with-php-mysql/
--->
 <div class="container" style="height: 90%; width: auto;">
     <div class=" m-4 position-relative " style="height: 85vh; width: auto;">
         <div class="bg-light shadow rounded border position-absolute top-50 start-50 translate-middle"
@@ -27,18 +21,7 @@
                         <th>Respuesta</th>
                     </tr>
                 </thead>
-                <tbody>
-                    <!--
-                    while( $developer = mysqli_fetch_assoc($resultSet) ) { ?>
-                    <tr id="<php echo $developer ['id']; ?>">
-                        <td><php echo $developer ['id']; ?></td>
-                        <td><php echo $developer ['pregunta']; ?></td>
-                        <td><php echo $developer ['respuesta']; ?></td>
-                    </tr>
-                    <php }  
 
-                    -->
-                </tbody>
             </table>
 
             <div class="d-grid gap-2 col-6 mx-auto">

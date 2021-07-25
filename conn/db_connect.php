@@ -9,3 +9,5 @@ try{
 } catch(PDOEcxeption $e) {
     die('Connected failed: '.$e->getMessage());
 }
+
+ // se realiza el connect al bd 

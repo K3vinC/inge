@@ -33,5 +33,5 @@ public function Verificar(){
 
 
 }
-
+// se encarga de verificar el usuario para poder realizar la conexion
 ?>
