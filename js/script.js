@@ -1,5 +1,9 @@
 var playBtn = null, pauseBtn = null, stopBtn = null, volume = null, volumeLabel = null;
 
+//----------------------------------------------
+//------- Se encarga de pausar, iniciar , aumentar y disminuir el volumen
+//----------------------------------------------
+
 window.onload = function () {
     playBtn = document.getElementById("play");
     pauseBtn = document.getElementById("pause");
@@ -31,6 +35,7 @@ window.onload = function () {
 //------------------- en proceso ajuste de tamaño --------------------
 //-------------------    e[i].style.fontFamily="Arial";
 //-------------------    e[i].style.color="#ff0000";
+//------------------- se encarga de alterar el tamaño fuente de la pagina
 //--------------------------------------------------------------------
 
 function CambioTexto(){

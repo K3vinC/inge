@@ -19,3 +19,5 @@
 <audio id='sound'src='http://static.keptelenseg.hu/a/23f7028106ce368ae8b4dc076aa09e67.mp3'></audio>
                                     
 <body id="change">
+
+ <!-- Contiene todo los links requerido para el codigo     -->
