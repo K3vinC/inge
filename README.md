@@ -6,21 +6,6 @@
     <?php require('templates/header.php');?>//al principio del doc.php
 	<?php require('templates/footer.php');?>//al final del mismo
 
--- Funcion listas:
-    Registrar usuario
-    Conectar a la BD (en la carpeta CONN esta la conexion recordar cambiar el nombre de la bd)
-
--- Funciones faltantes 
-    login 
-    recuperar contraseña
-    actualizar las tablas de ranking
-    implementar las funciones del juego
-
--- Reglas del profesor a modificar es la vista de reglas-prof.php
-
--- la vista donde el prof ve su rank, es rank-prof
-
--- opc-est es el menu del estudiante y opc-prof es el menu del prof
 
 Para clonar el repo es:
     git clone https://github.com/K3vinC/inge.git
