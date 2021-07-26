@@ -24,8 +24,20 @@ h1{
     z-index:2;
 }
 
+h3{ 
+  position: relative;
+  top: 0px;  
+  margin-top: 5px; 
+  color:#FDFEFE;
+  font-family: "Trebuchet MS";
+  font-size: 28px;
+  z-index: 2;
+  text-align: center;
+  }
+
 body{
-  background: url("imagenes/fondo.jpg");
+  background-color: #0093E9;
+  background-image: linear-gradient(45deg, #0093E9 0%, #8cded5 33%, #b7ffdb 66%, #b0ff83 100%);
   background-image: fixed;
   background-image: center;
   -webkit-background-size: cover;
@@ -35,45 +47,80 @@ body{
 }
 
 .contenedor{
+    background-color: #17202A;
+    border-radius: 6px;
     position: relative;
     top: 80px; 
     padding:10px;
     box-sizing:border-box;
-    width: 50.5%;
-    height: 220px;
+    width: 45.5%;
+    height: 420px;
     margin-left: auto;
     margin-right: auto;  
     }
 
-.contenedor2{  width: 45.5%;
+.contenedor2{  
+  width: 45.5%;
+  position: relative;
+  left: 15.5px;
   padding:10px;
   box-sizing:border-box;
-  margin:12px;
+  margin:5px;
   float:left;
   }
-  
-input[type=text] {
-  font-size: 20px;  
-  text-align: center;
-  margin:10px;
-  width: 95%;
-  height: 35px;
-  border-radius: 12px; 
-}
 
-input[type=text]:focus {
-  background-color: #85C1E9;
-  border-radius: 12px; 
+.barras{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 18px;  
+    width: 83%;
+    height: 25px;
+    border-radius: 6px; 
+    }
+      
+.barras:focus {
+        background-color: #85C1E9;
+        border-radius: 6px; 
+    }
   
-}
+     
+    .barras:focus {
+      border-color: dodgerblue;
+      box-shadow: 0 0 8px 0 dodgerblue;
+  }
+      
+  .inputWithIcon .barras:focus + i{
+      color:dodgerblue;
+  }
+              
+  .inputWithIcon .barras{
+      padding-left: 35px;
+  }
+              
+  .inputWithIcon{
+      position: relative;
+  }    
+  
+  .inputWithIcon i{
+      position: absolute;
+      left: 0%;
+      bottom: -10%;
+      padding:9px 8px;
+      color: #aaa;
+  }
+  
+  i{
+      font-size: 22px;
+  }
 
 .contenedor3{
     text-align: center;
     position: relative;
-    bottom: -100px;   
+    bottom: -170px;   
     z-index: 999;  
-    width: 40%;
-    height: 140px;
+    width: 90%;
+    height: 100px;
     margin-left: auto;
     margin-right: auto;  
     padding: 5px;
@@ -86,11 +133,11 @@ input[type=text]:focus {
     height: 40px;
     border: 2px solid white;
     font-size: 20px;
-    bottom: -10px;
+    top: -150px;
     font-style: italic;
     font-family: helvetica;  
     position:relative;
-    border-radius: 12px;
+    border-radius: 6px;
     font-weight: bold;
     }
 
@@ -111,8 +158,8 @@ input[type=text]:focus {
     width: 60%;
     height: 40px;
     position:relative;
-    bottom: -20px;
-    border-radius: 12px;
+    top: -140px;
+    border-radius: 6px;
     font-weight: bold;
   }
   
@@ -123,8 +170,15 @@ input[type=text]:focus {
     cursor: pointer;    
   }
 
-  @media (max-width:1000px){
+
+@media (max-width:960px){
     .contenedor{
-    width: 100%;
-        }
+    width: 95%;
     }
+}
+      
+@media (max-width:500px){
+  .contenedor{
+    width: 100%;
+    }
+} 

@@ -13,7 +13,8 @@ h1{
   }
 
 body{
-  background: url("imagenes/fondo.jpg");
+  background-color: #0093E9;
+  background-image: linear-gradient(45deg, #0093E9 0%, #8cded5 33%, #b7ffdb 66%, #b0ff83 100%);
   background-image: fixed;
   background-image: center;
   -webkit-background-size: cover;
