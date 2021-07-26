@@ -2,8 +2,7 @@
         require('templates/header.php');
 ?>
 
-<main class="form-signin"> <img class="mb-4 " src="front-end/imagenes/icono.png" alt="" width="100" height="80">
-    <div class="container ">
+<main class="form-signin">     <div class="container ">
         <div class=" m-4 position-relative " style="height:500px;">
             <div class="bg-light rounded shadow border position-absolute top-50 start-50 translate-middle" width="560"
                 height="315">
