@@ -57,10 +57,11 @@
 
 
 
-                                <div class="d-grid gap-2 col-6 mx-auto">
-                                    <input type="submit" class="w-100 btn btn-lg btn-primary" name="enviar"
-                                        value="Guardar y regresar"><br>
-                                </div>
+                                <div class="d-grid gap-2 col-6 mx-auto p-2">
+    <button type="button" class="btn btn-primary"><a href="login.php" style="    text-decoration: none;
+    color: white;">Guardar</a></button>
+
+    </div>
 
                             </div>
                         </div>
