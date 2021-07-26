@@ -2,17 +2,15 @@
 require "Conexion.php";
 
 class Administrar{
-public $cod="";
-public $question="";
-public $answer="";
+public $ced="";
+public $us="";
+public $correo="";
+public $tipo="";
+public $id_juego="";
+public $id_grupo="";
+public $cont="";
 
-function __construct($id,$pre,$res){
-    $this->cod = $id;
-    $this->question = $pre;
-    $this->answer = $res;
-}
-
-public function Editar_perfil(){
+public function Agregar_Usuario($ced,$us,$correo,$tipo,$id_juego,$id_grupo,$cont){
     // Creando la conexion
     $conn = new Conexion();
     $con = $conn->Conectar();
@@ -20,7 +18,18 @@ public function Editar_perfil(){
     if ($con->connect_error) {
         die("Conexión Fallida: " . $con->connect_error);
     }
-    $query = "CALL Mantenimiento('".$this->cod."','".$this->question."','".$this->answer."')";
+    $query = "CALL AñadirUsuario('".$ced."','".$us."','".$correo."','".$tipo."','".$id_juego."','".$id_grupo."','".$cont."')";
+    return mysqli_query($conn->Conectar(),$query);
+}
+
+public function Eliminar_Usuario($ced){
+    $conn = new Conexion();
+    $con = $conn->Conectar();
+    // Verificando la conexion
+    if ($con->connect_error) {
+        die("Conexión Fallida: " . $con->connect_error);
+    }
+    $query = "CALL EliminarUsuario('".$ced."')";
     return mysqli_query($conn->Conectar(),$query);
 }
 

@@ -25,6 +25,7 @@ public function Verificar(){
         $_SESSION["usuario"] = $resul->user;
         $_SESSION["tipo"] = $resul->type;
         $_SESSION["contra"] = $resul->pwd;
+        $_SESSION["puntaje"]= $resul->score;
         }
 
     mysqli_close($con->Conectar());
@@ -33,5 +34,5 @@ public function Verificar(){
 
 
 }
-// se encarga de verificar el usuario para poder realizar la conexion
+
 ?>

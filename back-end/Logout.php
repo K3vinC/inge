@@ -5,4 +5,3 @@ if(isset($_SESSION["usuario"])){
     session_destroy();
     header('Location: ../login.php');
 }
-//detruye la conexion que existia 
