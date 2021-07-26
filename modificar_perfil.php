@@ -18,14 +18,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="front-end/modificar_perfil.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <title>Modificar Perfil</title>
 </head>
 <body>
-
-<center>
-    <h1>DySy Quest</h1>
-    <h1>Editar Perfil</h1>
-</center>
 
 <!-- En esta parte se muestra los input donde ingresarán los datos para hacer los cambios en la BD.
 En los datos a cambiar tenemos la cédula, el nombre de usuario, correo, contraseña y confirmar contraseña. 
@@ -34,30 +30,45 @@ TODAVÍA NO HE PUESTO A FUNCIONAR LA VALIDACIÓN si la de confirmar contraseña 
 
 <form name="form1" method='POST'>
     <div class="contenedor">
-        <div class="contenedor2">
-        <input Type="Text" placeholder="Cédula" name="ced" require>
-            
-            <br>
-            <input Type="Text" placeholder="Nombre de usuario" name="name" require>
-            <br>
-            <input Type="Text" placeholder="Correo" name="email" require>
-        </div>
+        <h3>QuestSys</h3>
+        <h3>Editar Perfil</h3>
+            <div class="contenedor2">
+                <div class="inputWithIcon">
+                    <input Type="Text" class="barras" placeholder="Cédula" name="ced" require>
+                    <i class="fas fa-address-card"></i>
+                </div>
+                <br>
+                <div class="inputWithIcon">
+                    <input Type="Text" class="barras" placeholder="Nombre de usuario" name="name" require>
+                    <i class="fas fa-user"></i>
+                </div>
+                <br>
+                <div class="inputWithIcon">
+                    <input Type="Text" class="barras" placeholder="Correo" name="email" require>
+                    <i class="fas fa-at"></i>
+                </div> 
+            </div>
 
-        <div class="contenedor2">
-            <input Type="Text" placeholder="Contraseña" name="pass" require>
-            <br>
-            <input Type="Text" placeholder="Confirmar Contraseña" name="pass2" require>
-        </div>
-
-    </div>
-
-    <div class="contenedor3">
         
-            <input type="submit" value = "Enviar" name="enviar" class="boton">
+        <div class="contenedor2">
+                <div class="inputWithIcon">
+                    <input Type="Text" class="barras" placeholder="Contraseña" name="pass" require>
+                    <i class="fas fa-key"></i>
+                </div>
+            <br>
+                <div class="inputWithIcon">
+                    <input Type="Text" class="barras" placeholder="Confirmar Contraseña" name="pass2" require>
+                    <i class="fas fa-key"></i>
+                </div>
+        </div>
 
-        <button class="boton2" onclick="location.href='vista.php'" type="button">Salir</button>
-    
+        <div class="contenedor3">
+            <input type="submit" value = "Enviar" name="enviar" class="boton">
+            <button class="boton2" onclick="location.href='vista.php'" type="button">Salir</button>
+        </div>
+
     </div>
+
 
 </form>
 
@@ -69,7 +80,8 @@ TODAVÍA NO HE PUESTO A FUNCIONAR LA VALIDACIÓN si la de confirmar contraseña 
         $name= $_POST['name'];
         $email = $_POST['email'];
         $pass= $_POST['pass'];
-        $proceso = new Modificar($ced,$name,$email,$pass);
+        $puntaje= $_SESSION["puntaje"];
+        $proceso = new Modificar($ced,$name,$email,$pass,$puntaje);
         ?>
 
         <script>
@@ -80,6 +92,8 @@ TODAVÍA NO HE PUESTO A FUNCIONAR LA VALIDACIÓN si la de confirmar contraseña 
         <?php 
         $wasSaved = $proceso->Modificar_perfil();
         if($wasSaved){
+            $_SESSION["ced"] = $ced;
+            $_SESSION["usuario"] = $name;
             ?>
             <h2>Se modificó Correctamente</h2>
 
