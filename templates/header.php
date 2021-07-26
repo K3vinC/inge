@@ -20,4 +20,15 @@
                                     
 <body id="change">
 
+<nav class="navbar fixed-top " style="    background-color: #0505075e;" >
+  <div class="container-fluid">
+      <a class="navbar-brand" href="ayuda.php"><i class="bi bi-info-circle-fill" style="    color: white;">  ayuda</i></a>
+      <a class="navbar-brand" href="#"><img  src="front-end/imagenes/icono.png" alt="" width="30" height="30"></a>
+      
+    
+  </div>
+</nav>
+
+
+
  <!-- Contiene todo los links requerido para el codigo     -->
