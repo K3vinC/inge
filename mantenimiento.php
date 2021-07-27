@@ -87,7 +87,7 @@ PARA QUE PUEDA FUNCIONAR CON LA BD QUE TIENEN EN SU PC -->
             <div class="contenedor">
 
                  <div class="contenedor1">
-                  <h2> <?php echo $row['cod_pregunta'];?></h2>
+                  <h2> <?php echo $row['ID_preg'];?></h2>
                   <h3> <?php echo $row['pregunta'];?> </h3>
                  </div>
 
@@ -95,9 +95,9 @@ PARA QUE PUEDA FUNCIONAR CON LA BD QUE TIENEN EN SU PC -->
                   <h4> <?php echo $row['respuesta'];?></h4>
                   </div> 
                   
-                  <a class="btnedit" href="mantenimiento_actualizar.php?cod=<?= $row['cod_pregunta'];?>">Actualizar</a>
+                  <a class="btnedit" href="mantenimiento_actualizar.php?cod=<?= $row['ID_preg'];?>">Actualizar</a>
 
-                  <a class="btndelete" href="mantenimiento_eliminar.php?cod=<?= $row['cod_pregunta'];?>">Eliminar</a>  
+                  <a class="btndelete" href="mantenimiento_eliminar.php?cod=<?= $row['ID_preg'];?>">Eliminar</a>  
                     
             </div>
             <?php }    
@@ -117,7 +117,7 @@ PARA QUE PUEDA FUNCIONAR CON LA BD QUE TIENEN EN SU PC -->
             <div class="contenedor">
 
                  <div class="contenedor1">
-                  <h2> <?php echo $row['cod_pregunta'];?></h2>
+                  <h2> <?php echo $row['ID_preg'];?></h2>
                   <h3> <?php echo $row['pregunta'];?> </h3>
                  </div>
 
@@ -125,9 +125,9 @@ PARA QUE PUEDA FUNCIONAR CON LA BD QUE TIENEN EN SU PC -->
                   <h4> <?php echo $row['respuesta'];?></h4>
                   </div> 
                   
-                  <a class="btnedit" href="mantenimiento_actualizar.php?cod=<?= $row['cod_pregunta'];?>">Actualizar</a>
+                  <a class="btnedit" href="mantenimiento_actualizar.php?cod=<?= $row['ID_preg'];?>">Actualizar</a>
 
-                  <a class="btndelete" href="mantenimiento_eliminar.php?cod=<?= $row['cod_pregunta'];?>">Eliminar</a>  
+                  <a class="btndelete" href="mantenimiento_eliminar.php?cod=<?= $row['ID_preg'];?>">Eliminar</a>  
                     
             </div>
             <?php }    
@@ -147,7 +147,7 @@ PARA QUE PUEDA FUNCIONAR CON LA BD QUE TIENEN EN SU PC -->
             <div class="contenedor">
 
                  <div class="contenedor1">
-                  <h2> <?php echo $row['cod_pregunta'];?></h2>
+                  <h2> <?php echo $row['ID_preg'];?></h2>
                   <h3> <?php echo $row['pregunta'];?> </h3>
                  </div>
 
@@ -155,9 +155,9 @@ PARA QUE PUEDA FUNCIONAR CON LA BD QUE TIENEN EN SU PC -->
                   <h4> <?php echo $row['respuesta'];?></h4>
                   </div> 
                   
-                  <a class="btnedit" href="mantenimiento_actualizar.php?cod=<?= $row['cod_pregunta'];?>">Actualizar</a>
+                  <a class="btnedit" href="mantenimiento_actualizar.php?cod=<?= $row['ID_preg'];?>">Actualizar</a>
 
-                  <a class="btndelete" href="mantenimiento_eliminar.php?cod=<?= $row['cod_pregunta'];?>">Eliminar</a>  
+                  <a class="btndelete" href="mantenimiento_eliminar.php?cod=<?= $row['ID_preg'];?>">Eliminar</a>  
                     
             </div>
             <?php }    

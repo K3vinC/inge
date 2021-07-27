@@ -37,37 +37,27 @@ TODAVÍA NO HE PUESTO A FUNCIONAR LA VALIDACIÓN si la de confirmar contraseña 
                         <i class="fas fa-address-card"></i>
                     </div>
                     <br>
+
                     <div class="inputWithIcon">
-                        <input Type="Text" class="barras" placeholder="Nombre de usuario" name="name" require>
-                        <i class="fas fa-user"></i>
-                    </div>
+                    <input Type="Text" class="barras" placeholder="ID Juego" name="id_juego" require>
+                    <i class="fas fa-gamepad"></i>
+                </div>
                     <br>
+
                     <div class="inputWithIcon">
-                        <input Type="Text" class="barras" placeholder="Correo" name="email" require> 
-                        <i class="fas fa-at"></i>
-                    </div>
-            <p>Selecciona el tipo</p>
-                <div class="select">
-                    <select name = "tip" >
-                    <option value="estudiante">Estudiante</option>
-                    <option value="profesor">Profesor</option>
-                    <option value="administrador">Administrador</option>
-                    </select>
-                </div> 
+                    <input Type="Text" class="barras" placeholder="Id Grupo" name="id_grupo" require>
+                    <i class="fas fa-users"></i>
+                </div>
+            
         </div>
 
         
         <div class="contenedor2">
 
-                <div class="inputWithIcon">
-                    <input Type="Text" class="barras" placeholder="ID Juego" name="id_juego" require>
-                    <i class="fas fa-gamepad"></i>
-                </div>
-                <br>
-                <div class="inputWithIcon">
-                    <input Type="Text" class="barras" placeholder="Id Grupo" name="id_grupo" require>
-                    <i class="fas fa-users"></i>
-                </div>
+                    <div class="inputWithIcon">
+                        <input Type="Text" class="barras" placeholder="Nombre de usuario" name="name" require>
+                        <i class="fas fa-user"></i>
+                    </div>
                 <br>
                 <div class="inputWithIcon">
                     <input Type="password" class="barras" placeholder="Contraseña" name="cont" require>
@@ -94,11 +84,9 @@ TODAVÍA NO HE PUESTO A FUNCIONAR LA VALIDACIÓN si la de confirmar contraseña 
 <?php
     if(isset($_POST['enviar'])){
         $ced = $_POST['ced'];
-        $name = $_POST['name'];
-        $email = $_POST['email'];
-        $tipo = $_POST['tip'];
         $id_juego = $_POST['id_juego'];
         $id_grupo = $_POST['id_grupo'];
+        $name = $_POST['name'];
         $cont = $_POST['cont'];
 
         $proceso = new Administrar();
@@ -110,7 +98,7 @@ TODAVÍA NO HE PUESTO A FUNCIONAR LA VALIDACIÓN si la de confirmar contraseña 
             </script>
            
         <?php 
-        $wasSaved = $proceso->Agregar_Usuario($ced,$name,$email,$tipo,$id_juego,$id_grupo,$cont);
+        $wasSaved = $proceso->Agregar_Usuario($ced,$id_juego,$id_grupo,$name,$cont);
         if($wasSaved){
             ?>
             <h2>El Usuario se agrego Correctamente</h2>
@@ -119,7 +107,7 @@ TODAVÍA NO HE PUESTO A FUNCIONAR LA VALIDACIÓN si la de confirmar contraseña 
 
         }else{
             ?>
-            <h2>El Usuario no se pudo agregar</h2>
+            <h2>El Usuario no se pudo agregar. No es encuentra.</h2>
 
             <?php
         }

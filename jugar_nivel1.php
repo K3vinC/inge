@@ -24,7 +24,7 @@
         $i=$_SESSION["id_p"];        
         $conn = new Conexion();
         $con = $conn->Conectar();
-        $query = "SELECT * from dysy_preguntas_respuesta WHERE cod_pregunta='".$i."';";
+        $query = "SELECT * from dysy_preguntas_respuesta WHERE ID_preg='".$i."';";
         $result_tasks = mysqli_query($conn->Conectar(), $query);
         $row =mysqli_fetch_assoc($result_tasks);  
         if(!$row > 0){

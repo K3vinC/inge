@@ -1,11 +1,14 @@
 <?php
 require('templates/header.php');
 require('conn/db_connect.php');
+
+session_start();
+
 $message = '';
 $c = "";
 
 //colocar variable sesion
-$profesor_id = 2;
+$profesor_id = $_SESSION["ced"];
 
 //Este codigo trae los grupos que pertenecen al profesor
 $sql1 = "SELECT codigo FROM grupo WHERE ID_prof LIKE '%$profesor_id%' ";

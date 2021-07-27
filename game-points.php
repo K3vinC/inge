@@ -6,7 +6,7 @@ $c = "";
 
 //COLOCAR EN "Lowin" el session del nombre del user
 
-$user_session = 'Lowin';
+$user_session = $_SESSION["usuario"];
 
 $sql = "SELECT score FROM usuario_grupo_juego 
         WHERE username LIKE '%$user_session%' AND ID_juego LIKE '7'";
