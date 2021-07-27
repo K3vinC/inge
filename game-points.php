@@ -6,7 +6,7 @@ $c = "";
 
 //COLOCAR EN "Lowin" el session del nombre del user
 
-$user_session = 'Lowin';
+$user_session = $_SESSION["usuario"];
 
 $sql = "SELECT score FROM usuario_grupo_juego 
         WHERE username LIKE '%$user_session%' AND ID_juego LIKE '7'";
@@ -60,8 +60,10 @@ $usuarios = $stmt2->fetchAll(PDO::FETCH_ASSOC);
             </table>
             <p class="h6 lead" style="margin: 0px 0px 0px 10px;">Siempre aspira a llegar a una mejor version de ti ;).</p>
             <div class="d-grid gap-2 col-6 mx-auto">
-                <button type="submit" class="btn btn-secondary m-3 shadow btn-outline-light" type="button" style="border-radius: 5px;
-    "><i class="fas fa-arrow-circle-right"></i>&nbsp;&nbsp;Continuar</button>
+                <button type="submit" class="btn btn-secondary m-3 shadow btn-outline-light" type="button" style="border-radius: 5px; 
+"><i class="fas fa-arrow-circle-right" ></i><a onclick="location.href='vista.php'">salir</a>
+
+</button>
             </div>
         </div>
         <div class="bg-light rounded border position-absolute top-50 p-2" style="text-align: center; box-shadow: 0 .5rem 1rem rgba(0,0,0,0.35)!important;">

@@ -22,15 +22,9 @@
 
 <nav class="navbar fixed-top " style="    background-color: #0505075e;" >
   <div class="container-fluid">
-      <a class="navbar-brand" href="#"><img  src="https://utp.ac.pa/documentos/2015/imagen/logo_utp_1_72.png" width="30" height="30" style ="background-color: white;
-    border-radius: 50%;"></a>
-      
       <a class="navbar-brand" href="ayuda.php"><i class="bi bi-info-circle-fill" style="    color: white;">  ayuda</i></a>
       <a class="navbar-brand" href="#"><img  src="front-end/imagenes/icono.png" alt="" width="30" height="30"></a>
       
-      <a class="navbar-brand" href="#"><img  src="https://fisc.utp.ac.pa/sites/fisc.utp.ac.pa/files/documentos/2020/imagen/logo_en_contactenos.png" width="30" height="30"></a>
-      
-   
     
   </div>
 </nav>

@@ -2,15 +2,14 @@
 require "Conexion.php";
 
 class Administrar{
+
 public $ced="";
-public $us="";
-public $correo="";
-public $tipo="";
 public $id_juego="";
 public $id_grupo="";
+public $name="";
 public $cont="";
 
-public function Agregar_Usuario($ced,$us,$correo,$tipo,$id_juego,$id_grupo,$cont){
+public function Agregar_Usuario($ced,$id_juego,$id_grupo,$name,$cont){
     // Creando la conexion
     $conn = new Conexion();
     $con = $conn->Conectar();
@@ -18,7 +17,7 @@ public function Agregar_Usuario($ced,$us,$correo,$tipo,$id_juego,$id_grupo,$cont
     if ($con->connect_error) {
         die("Conexión Fallida: " . $con->connect_error);
     }
-    $query = "CALL AñadirUsuario('".$ced."','".$us."','".$correo."','".$tipo."','".$id_juego."','".$id_grupo."','".$cont."')";
+    $query = "CALL AñadirUsuario('".$ced."','".$id_juego."','".$id_grupo."','".$name."','".$cont."')";
     return mysqli_query($conn->Conectar(),$query);
 }
 

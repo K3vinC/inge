@@ -21,10 +21,10 @@ public function Verificar(){
         }
     else{
         $resul = mysqli_fetch_object($resul);
-        $_SESSION["ced"] = $resul->id;
-        $_SESSION["usuario"] = $resul->user;
-        $_SESSION["tipo"] = $resul->type;
-        $_SESSION["contra"] = $resul->pwd;
+        $_SESSION["ced"] = $resul->ID_usuario;
+        $_SESSION["usuario"] = $resul->username;
+        $_SESSION["tipo"] = $resul->TYPE;
+        $_SESSION["contra"] = $resul->psswd;
         $_SESSION["puntaje"]= $resul->score;
         }
 

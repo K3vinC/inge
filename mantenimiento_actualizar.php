@@ -26,7 +26,7 @@
 <?php
                 $conn = new Conexion();
                 $con = $conn->Conectar();
-                $query = "SELECT * from dysy_preguntas_respuesta where cod_pregunta='".$id."'";
+                $query = "SELECT * from dysy_preguntas_respuesta where ID_preg='".$id."'";
                 $result_tasks = mysqli_query($conn->Conectar(), $query);
                  while($row =mysqli_fetch_assoc($result_tasks)){?>
 
